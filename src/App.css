@@ -1,1 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&family=Poppins:wght@200;300;400;500&display=swap');
+*{
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+    
+}
 
+body {
+    font-family: 'Merriweather', serif;
+    font-family: 'Poppins', sans-serif;
+    background-color: #15012c;
+}
+ nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(13, 5, 26);
+    color: white;
+    padding: 10px;
+ }
+
+ nav .heading {
+    padding: 0 30px;
+    font-weight: 800;
+ }
+
+ nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    
+    
+ }
+ nav ul li {
+
+    padding: 0 20px;
+    
+ }
+a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+button {
+    border: none;
+    padding: 1.5px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 2px;
+    
+} 
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+    gap:10px;
+    padding: 10px;
+}
+.card {
+    display: block;
+    max-width: 300px;
+    max-height: 350px;
+    background-color: rgb(20, 12, 36);
+    color: white;
+    border-radius: 20px;
+    font-weight: 100;
+    transition: all(0.3s);
+    cursor: pointer;
+}
+.card:hover {
+    transform: scale(1.1);
+    transition: all(0.3s);
+}
+img {
+    width: 100%;
+    max-width: 280px;
+    max-height: 300px;
+    height: 100%;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    padding: 0 10px;
+}
+h5 {
+    margin-left: 20px;
+}
+.pages {
+    color: white;
+    list-style: none;
+    display: inline-block;
+    border: 1px solid white;
+    padding: 5px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.movie-details {
+    color: white;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color:rgb(13, 5, 26);
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
